@@ -172,7 +172,7 @@ font-size: 35px;
 
 
   .mid-content .right-container{
-    background-image: url("images/home.jpg");
+    background-image: url("../images/home.jpg");
     background-size:cover;
     background-position: center;
     border-radius: 5px;
@@ -364,7 +364,7 @@ font-size: 35px;
 
 .container-3 .image-container{
 
-  background-image: url("C:/Users/Suman/Documents/WebScripts/images/wireframe.png");
+  background-image: url("../images/wireframe.png");
   background-size: cover;
   background-position: center;
   height: 70vh;
