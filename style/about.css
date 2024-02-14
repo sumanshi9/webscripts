@@ -22,7 +22,7 @@
 
 .abus-container-1 .intro-video{
 
-    background-image: url("C:/Users/Suman/Documents/WebScripts/images/about-us-2.jpg");
+    background-image: url("../images/about-us-2.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -111,7 +111,7 @@
 
 .abus-container-2 .img{
 
-    background-image: url("C:/Users/Suman/Documents/WebScripts/images/about-us.jpg");
+    background-image: url("../images/about-us.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 5px;
