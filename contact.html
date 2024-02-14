@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Web Scripts</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+        
+        <link rel="stylesheet" href="style/logocss.css">
+        <link rel="stylesheet" href="style/footer.css">
+        
+
+
+
+
+        <style>
+
+                       
+            .container {
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .container h3{
+              color: white;
+              font-family: 'League Spartan', sans-serif;
+              font-size: 60px;
+              margin-top: 70px;
+              font-weight: lighter;
+              text-align: center;
+              animation: slideInFromTop2 1s ease-out;
+
+            }
+
+            @keyframes slideInFromTop2 {
+            0% {
+                opacity: 0;
+                transform: translateY(-70%);
+                visibility: hidden;
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                visibility: visible;
+          }}
+
+          .container p{
+
+            opacity: 0;
+            transform: translateY(-100%);
+            animation: slideInFromTop 3s ease forwards;;
+            animation-delay: 2s;
+            font-size: 32px;
+            color: white;
+            font-family: 'League Spartan', sans-serif;
+            font-weight: lighter;
+            text-align: center;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            }
+
+            @keyframes slideInFromTop {
+            0% {
+              
+              transform: translateY(-100%);
+              opacity: 0;
+            }
+            100% {
+              
+              transform: translateY(0);
+              opacity: 1;
+            }}
+
+            .mid-content{
+              background-color: white;
+              height: 90vh;
+              width: 70%; /* Set the desired width of the container */
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 0;
+              margin-bottom: 300px;
+              display: flex;
+              animation: slideUp 2s forwards;
+              animation-delay: 5s;
+              opacity: 0;
+              
+            }
+
+            @keyframes slideUp {
+              0% {
+                transform: translateY(40%);
+              }
+              100% {
+                transform: translateY(0);
+                opacity: 1;
+              }
+            }
+
+            .mid-content:hover .l-container {
+              filter: grayscale(0%);
+            }
+
+            
+
+            .l-container{
+              flex: 40%;
+              background-image: url("images/contact.jpg");
+              background: cover;
+              background-position: -50px center;
+              filter: grayscale(100%);
+              transition: filter 0.3s ease forwards; /* Add transition for smooth effect */
+            }
+
+            .r-container{
+              flex: 60%;
+              background-color: white;
+              position: relative;
+
+            }
+
+            .r-container video{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+            .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              /* background-color: rgba(0, 0, 0, 0.5);  Semi-transparent black overlay */
+            }
+
+            
+            .form-container {
+              width: 100%;
+              height: 100vh;
+              max-width: 500px; /* Adjust as needed */
+              margin: 0 auto;
+              padding: 50px;
+              overflow: hidden;
+            }
+
+            .input-group {
+              margin-bottom: 7px;
+            }
+
+            .input-group label {
+              display: inline-block;
+              width: 100%; /* Adjust as needed */
+              font-weight: bolder;
+              font-family: 'League Spartan', sans-serif;
+            }
+
+            .input-group input,
+            .input-group textarea {
+              font-family: Georgia, "Times New Roman", Times, serif;
+              background: rgba(255,255,255,.1);
+              border: none;
+              border-radius: 4px;
+              font-size: 15px;
+              margin: 0;
+              outline: 0;
+              padding: 10px;
+              width: 100%;
+              box-sizing: border-box; 
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box; 
+              background-color: #e8eeef;
+              color:#64776f99;
+              -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+              box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+              margin-bottom: 30px;
+            }
+
+            .input-group textarea{
+              height: 80px;
+            }
+
+
+            .input-group button {
+              padding: 8px 15px;
+              background-color: #000000;
+              color: #fff;
+              /* font-weight: bold; */
+              font-size: 20px;
+              border: none;
+              cursor: pointer;
+              height: 50px;
+              width:100%;
+              border-radius: 5px;
+            }
+
+            .input-group button:hover {
+              background-color: #969696;
+            }
+
+            
+
+
+
+        </style>
+    </head>
+    <body>
+        <!-- <video autoplay loop muted>
+            <source src="videos/v7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <div class="topnav">
+          <div class="flip-container" >
+            <a class="active" href="index.html"><span>w</span><span>e</span><span>b</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>s</span><span>.</span></a>
+          </div>
+          <div class="topnav-right">
+
+            <div class="flip-container">
+              <a href="about.html" style="font-size: 35px;"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
+            </div>
+            <div class="flip-container">
+              <a href="" style="font-size: 35px;"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a>                
+            </div>
+            <div class="flip-container">
+              <a href="work.html" style="font-size: 35px;"><span>W</span><span>o</span><span>r</span><span>k</span></a>
+            </div>
+            <div class="flip-container">
+              <a href="contact.html" style="font-size: 35px;"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a>
+            </div> 
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="Heading">
+            <h3>Get a proposal</h3>
+            <p>Drop us a line about your query, and we'll hit you back in a jiffy!</p>
+            <br><br><br>
+          </div>
+        </div>
+
+
+        <div class="mid-content">          
+          <div class="l-container"></div>
+          <div class="r-container">
+            <!-- <video autoplay loop muted playsinline>
+              <source src="videos/v32.mp4" type="video/mp4">
+            </video> -->
+            <div class="overlay"></div>
+            <form class>
+              <div class="form-container">
+                <div class="input-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="input-group">
+                  <label for="contact">Contact Number:</label>
+                  <input type="text" id="contact" name="contact" placeholder="Enter your contact number">
+                </div>
+                <div class="input-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                  <label for="subject">Subject:</label>
+                  <input type="text" id="subject" name="subject" placeholder="Enter the subject">
+                </div>
+                <div class="input-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="input-group">
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+              
+              
+            </form>
+
+          </div>
+        </div>
+
+
+
+        <footer>
+          <h1>Webscripts</h1>
+            <div class="footer-row">                
+                <div class="footer-col1">                  
+                    <p>contact@webscripts.ca</p>
+                    <p>+1 (514) 621 5964</p>
+                </div>
+                <div class="footer-inner-row">
+                    <div class="footer-col2">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="">Services</a>
+                        <a href="work.html">Work</a>                    
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col3">
+                        <div class="icons"><a href="facebook.com/webscripts.ca" class="fa fa-facebook"></a></div>
+                        <div class="icons"><a href="https://www.instagram.com/webscripts.ca" class="fa fa-linkedin"></a></div>
+                        <div class="icons"><a href="https://www.linkedin.com/company/webscripts" class="fa fa-instagram"></a></div>
+                        <div class="icons"><a href="https://twitter.com/WebScriptsHQ" class="fa fa-twitter"></a></div>
+                    </div>
+                    <div class="footer-col4">
+                        <p>Location: We work remotely so that the costs don't reflect on you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row-2">
+                <div class="footer-row-2-col-1">
+                    <p> &copy; 2024 Webscripts, Inc. All rights reserved</p>
+                </div>
+                <div class="footer-row-2-col-2">
+                    <p><a href="">Privacy Policy</a></p>                    
+                </div>
+                <div class="footer-row-2-col-3">
+                    <p>&copy; 2024</p>                    
+                </div>
+            </div>
+        </footer>
+
+        
+
+    </body>
+</html>

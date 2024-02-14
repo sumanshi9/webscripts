@@ -1,0 +1,289 @@
+.abus-container-1{
+    background-color: white;
+    height: 150vh;
+    padding: 100px 40px 0px 40px;
+    margin-top: 20px;
+    
+
+}
+
+.abus-container-1 h1{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 120px;
+    text-align: center;
+    
+}
+
+
+.abus-container-1 .intro-content{
+    display: flex;
+}
+
+.abus-container-1 .intro-video{
+
+    background-image: url("C:/Users/Suman/Documents/WebScripts/images/about-us-2.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 60%;
+    height: 70vh; /* Adjust the height as needed */
+    overflow: hidden;
+    background-color: rgb(119, 148, 148);
+    border-radius: 5px;
+
+}
+
+.abus-container-1 #abus-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.abus-container-1 .intro-text{
+
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    
+
+}
+
+.abus-container-1 .intro-text p{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+
+
+.abus-container-2{
+    background-color: rgb(0, 0, 0);
+    height: 160vh;
+    padding: 100px 40px 0px 40px;
+    
+
+}
+
+.abus-container-2 h1{
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 120px;
+    text-align: center;
+    
+}
+
+.abus-container-2 .mid-content{
+
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: 0;
+    
+}
+
+.abus-container-2 .mid-content .mid-text{
+    width: 45%;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+
+}
+
+.abus-container-2 .img{
+
+    background-image: url("C:/Users/Suman/Documents/WebScripts/images/about-us.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    width: 55%;
+    height: 85vh;
+    padding-top: 20px;
+    
+}
+
+
+.abus-container-3{
+    height: 160vh;
+    background-color: white;
+    padding: 100px 60px 100px 60px;
+}
+
+.abus-container-3 h1{
+
+    /* color: white; */
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 120px;
+    text-align: center;
+
+}
+
+.abus-card-containers{
+    display: flex;
+    padding: 100px 60px 50px 60px;
+
+}
+
+
+.abus-card-containers .abus-col-1,
+.abus-card-containers .abus-col-2,
+.abus-card-containers .abus-col-3 {
+  width: calc(33.33% - 20px); /* Adjust the width based on the number of items */
+  /* Subtracting padding to ensure each div fits within the container */
+  background-color: rgb(0, 0, 0);
+  height: 50vh;
+  margin: 10px;
+  border-bottom: 20px solid rgb(20, 110, 245);
+  color: white;
+}
+
+
+.abus-card-containers .abus-col-1 h2,
+.abus-card-containers .abus-col-2 h2,
+.abus-card-containers .abus-col-3 h2{
+    /* color: white; */
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center; 
+    margin-bottom: 0;
+
+}
+
+.abus-card-containers .abus-col-1 .abus-list-items,
+.abus-card-containers .abus-col-2 .abus-list-items,
+.abus-card-containers .abus-col-3 .abus-list-items{
+
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.abus-card-containers .abus-col-1 .abus-list-items ul,
+.abus-card-containers .abus-col-2 .abus-list-items ul,
+.abus-card-containers .abus-col-3 .abus-list-items ul{
+
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+
+    
+
+
+}
+
+.abus-card-containers .abus-col-1 .abus-list-items li,
+.abus-card-containers .abus-col-2 .abus-list-items li,
+.abus-card-containers .abus-col-3 .abus-list-items li{
+
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: left;
+    margin-top: 15px;
+    
+
+    
+
+
+}
+
+
+
+.abus-getintouch{
+    height: 160vh;
+    background-color: rgb(255, 255, 255);
+    
+
+
+}
+
+.abus-getintouch h3{
+
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    text-align: center;
+
+}
+
+.abus-getintouch p{
+
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    padding: 0px 200px 0px 200px;
+
+    margin: 100px 0px 100px 0px;
+
+}
+
+
+.abus-contact-us{
+
+
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center;
+   
+
+}
+
+.abus-contact-us button{
+    width: 300px;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+.abus-getintouch .abus-contact-us a{
+
+    transition: padding-bottom 0.2s ease;
+    
+
+}
+
+
+.abus-getintouch .abus-contact-us a:hover {
+
+    padding-bottom: 20px;
+    
+    
+    
+}
+
+
+

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Web Scripts</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  
+        
+        <link rel="stylesheet" href="style/logocss.css">
+        <link rel="stylesheet" href="style/footer.css">
+
+        <style>
+
+          html, body {
+              max-width: 100%;
+              overflow-x: hidden;
+          }
+
+          h1{
+              color: white;  
+              font-family:'League Spartan', sans-serif; 
+              font-size: 40px;
+              font-weight: 100;
+              animation: slideInFromTop 1s ease-out;
+          }
+
+          .animate-slide{
+              animation: slideInFromTop 1s ease-out forwards;
+              animation-delay: 1s;
+          }
+
+          @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+          }} 
+          
+          .container{
+              margin-top: 80px;
+              margin-left: 100px;
+              height: 100vh;
+          }
+
+          .container2{              
+              height: 100vh; 
+              background-image: url('images/bg3.jpg');
+              background-size: cover; 
+              background-position: center;
+              width: 100%;
+              position: relative; 
+              margin-top: 80px;
+              margin-left: 100px;
+            }
+
+            .container2 ul{
+              padding-left: 60px;
+              margin-top: 80px;
+            }
+
+            .container2 li{
+              color: white;
+              font-size: 25px;
+              word-spacing: 4px;
+              font-family: 'League Spartan', sans-serif;
+              padding: 8px;           
+            }
+
+            /* .container2 video{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              min-width: 100%;
+              min-height: 100%;
+              width: auto;
+              height: auto;
+              z-index: -1;
+
+            } */   
+
+            .sub-container{
+              margin-left: 100px;
+              height: 100vh;
+            }
+
+            .img1 {
+                width: 100%; 
+                height: 100%;
+                height: auto; 
+                display: block; /* Remove any extra spacing below the image */
+                animation: slideInFromLeft 1s ease-out;
+            }
+
+            .p1, .p2{
+              background-color:grey;              
+              overflow: hidden;
+              width: 270px;
+              height: 320px;
+              display: inline-block;
+              border-radius:5%;
+              /* padding: 0 0 1% 1%; */         
+            }
+
+            table{
+              width: 100%;
+            }
+
+            @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+            }
+
+            tr{
+              color: white;
+              font-size: 35px;
+              font-weight: lighter;
+              float: left;
+              padding: 0;
+              margin: 0;
+              /* border-bottom: 1px solid white; */
+            }
+
+            tr:hover{
+              border-bottom: 1px solid white;
+            } 
+
+            td{
+              text-align: left;
+            }
+            .client-name{
+              float: left;
+              width: 900px;
+              /* margin-right: 900px; */
+            }
+
+            .client-location{
+              width: 260px;
+
+            }
+
+            
+            .tech-icons{
+              width: 100%;
+              height: auto;
+              background-color: rgba(0, 0, 0, 0);
+              padding: 40px;
+              border-radius: 10px;
+              
+            }
+
+            .tech-icons-img{
+              width: 70px;
+              height: 70px;
+              margin-right: 60px;
+              margin-bottom: 100px;
+              
+            }
+
+            #cell1, #cell2, #cell3, #cell4, #cell5, #cell6{
+              color: white;
+              text-decoration: none;
+              cursor: pointer;
+            }
+
+            #cell1 a{
+              color: white;
+              text-decoration: none;
+              cursor:pointer;
+            }
+
+            .int1{
+
+              font-family: 'League Spartan', sans-serif;
+              text-align: center;
+              font-size: 180px;
+              font-weight: bolder;
+              letter-spacing: 2px;
+              word-spacing: 5px;
+              margin-top: 80px;              
+              margin-left:250px;
+              margin-right: 250px;
+              animation: slideInFromTop2 2s ease-out;
+              /* animation: slideInFromTop2 1s ease-out forwards; */
+              /* animation-delay: 1s; */
+
+            }
+
+           
+          @keyframes slideInFromTop2 {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+                visibility: hidden;
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+                visibility: visible;
+          }} 
+
+
+            :root {
+              --animation-delay: 0.01s;
+            }
+           
+
+            .int2{
+
+              font-family: 'League Spartan', sans-serif;
+              font-weight: lighter;
+              text-align: center;
+              color: white;
+              font-size: 21px;
+              letter-spacing: 2px;
+              word-spacing: 5px;
+              /* margin-left:220px; */
+              /* margin-right: 220px; */
+              /* border-right: 2px solid white; */
+              /* opacity: 0; */
+              /* animation: slideFromBottom 1s ease-out forwards; */
+            
+              
+                                                  
+            }
+
+            span{
+              opacity: 0;
+              animation-name: typewriter;
+              animation-fill-mode: forwards;
+              animation-duration: 0s;
+              animation-delay: calc(2s + var(--animation-order) * var(--animation-delay));
+            }
+
+            @keyframes typewriter {
+              from {
+                opacity: 0;
+              }
+
+              to {
+                opacity: 1;
+              }
+            }
+
+
+            .intro-text{
+              /* background-image: url('images/bg7.jpg');
+              background-size: cover;
+              background-position: center;
+              position: relative;  */
+              /* filter: blur(2px); */
+              width: 80%; /* Extends the container to the maximum width of the page */
+              height: 100vh;      
+              color: white;
+              margin: 0 auto;
+
+            }
+
+
+
+        </style>
+
+
+
+        
+    </head>
+    <body>
+        <!-- <video autoplay loop muted>
+            <source src="videos/v4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <div class="topnav">
+          <div class="flip-container" >
+            <a class="active" href="index.html"><span>w</span><span>e</span><span>b</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>s</span><span>.</span></a>
+          </div>
+          <div class="topnav-right">
+
+            <div class="flip-container">
+              <a href="about.html" style="font-size: 35px;"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
+            </div>
+            <div class="flip-container">
+              <a href="" style="font-size: 35px;"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a>                
+            </div>
+            <div class="flip-container">
+              <a href="work.html" style="font-size: 35px;"><span>W</span><span>o</span><span>r</span><span>k</span></a>
+            </div>
+            <div class="flip-container">
+              <a href="contact.html" style="font-size: 35px;"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a>
+            </div> 
+          </div>
+        </div>
+        <div class="intro-text">
+          <h2 class="int1">Hello! </h2> <br>
+            <h2 class="int2">At Webscripts, we're all about embracing your awesome ideas and crafting some seriously cool, tailor-made solutions to meet every single one of your needs. We're here to give your business that extra oomph online! We totally get how precious your business is, which is why we offer a bunch of rad services like branding, whipping up killer websites, brainstorming epic business ideas, boosting your SEO game, and turning your data into something seriously eye-catching! Let's make your online presence pop together! </h2>
+                      
+        </div>
+        <div class="container">
+          <h1>Check out our wizardy in action!</h1>
+          <br><br><br>
+          <table>
+            <tr id="row1">
+              <td class="client-name">Smoke Society</td>
+              <td class="client-location" id="cell1">Canada</td>
+            </tr>
+            <tr id="row2">
+              <td class="client-name">Glose</td>
+              <td class="client-location" id="cell2">France</td>
+            </tr>
+            <tr id="row3">
+              <td class="client-name">Ga Tech</td>
+              <td class="client-location" id="cell3">Japan</td>
+            </tr>
+            <tr id="row4">
+              <td class="client-name">Le Rock</td>
+              <td class="client-location" id="cell4">Canada</td>
+            </tr>
+            <tr id="row5">
+              <td class="client-name">TSC Global</td>
+              <td class="client-location" id="cell5">United States</td>
+            </tr>
+            <tr id="row6">
+              <td class="client-name">Grand Beatbox Battle</td>
+              <td class="client-location" id="cell6">Japan</td>
+            </tr>
+            <tr id="row7">
+              <td class="client-name">Umiya Enterprise</td>
+              <td class="client-location" id="cell7">India</td>
+            </tr>
+            <tr id="row8">
+              <td class="client-name">Junni</td>
+              <td class="client-location" id="cell8">Japan</td>
+            </tr>
+            
+            
+            
+          </table> 
+        </div>
+
+        <div class="container2">
+          <!-- <video autoplay loop muted>
+            <source src="videos/v5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video> -->
+          <br><br><br><br><br>
+          <h1>Your site's ultimate recipe for triumph!</h1>
+          <ul>
+            <li>Active social media presence</li>
+            <li>Reliable hosting service</li>
+            <li>User-friendly design</li>
+            <li>Fast loading speed</li>
+            <li>Mobile responsiveness</li>
+            <li>Secure payment options</li>            
+            <li>Effective SEO</li>
+            <li>Engaging content</li>
+          </ul>
+        </div>
+
+        <div class="sub-container">
+
+          <div>
+            <br><br><br><br><br><br>
+            <h1 class="animate-slide">The gadgetry that gets our gears turning!</h1>
+
+          </div>
+
+          
+          <br><br><br><br>
+          <div class="tech-icons">
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />              
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />             
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" />
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />               
+            <img class= "tech-icons-img" style="background-color: white;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg">
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-plain-wordmark.svg" />              
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />            
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain-wordmark.svg" />          
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain-wordmark.svg" />          
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />          
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-plain-wordmark.svg" />          
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" />            
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />   
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />            
+            <img class= "tech-icons-img" src="images/mysql.png" />
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
+          </div>
+        </div>
+
+
+        
+
+        <footer>
+          <h1>Webscripts</h1>
+            <div class="footer-row">                
+                <div class="footer-col1">                  
+                    <p>contact@webscripts.ca</p>
+                    <p>+1 (514) 621 5964</p>
+                </div>
+                <div class="footer-inner-row">
+                    <div class="footer-col2">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="">Services</a>
+                        <a href="work.html">Work</a>                    
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col3">
+                        <div class="icons"><a href="facebook.com/webscripts.ca" class="fa fa-facebook"></a></div>
+                        <div class="icons"><a href="https://www.instagram.com/webscripts.ca" class="fa fa-linkedin"></a></div>
+                        <div class="icons"><a href="https://www.linkedin.com/company/webscripts" class="fa fa-instagram"></a></div>
+                        <div class="icons"><a href="https://twitter.com/WebScriptsHQ" class="fa fa-twitter"></a></div>
+                    </div>
+                    <div class="footer-col4">
+                        <p>Location: We work remotely so that the costs don't reflect on you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row-2">
+                <div class="footer-row-2-col-1">
+                    <p> &copy; 2024 Webscripts, Inc. All rights reserved</p>
+                </div>
+                <div class="footer-row-2-col-2">
+                    <p><a href="">Privacy Policy</a></p>                    
+                </div>
+                <div class="footer-row-2-col-3">
+                    <p>&copy; 2024</p>                    
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+
+          let sentences = document.querySelectorAll('.int2');
+          let characterCount = 0;
+
+          for (let i = 0; i < sentences.length; i++) {
+            let sentence = sentences[i];
+            let newContent = '';
+
+            // go through all characters of the sentence
+            for (let j = 0; j < sentence.textContent.length; j++) {
+              let substring = sentence.textContent.substr(j, 1);
+              // if we have a character, wrap it
+              if (substring !== " ") {
+                newContent += `<span style="--animation-order: ${characterCount};">${substring}</span>`;
+              } else {
+                newContent += substring;
+              }
+              characterCount++;
+            }
+            sentence.innerHTML = newContent;
+          }
+
+
+          var row1 = document.getElementById("row1");
+          var row2 = document.getElementById("row2");
+          var row3 = document.getElementById("row3");
+          var row4 = document.getElementById("row4");
+          var row5 = document.getElementById("row5");
+          var row6 = document.getElementById("row6");
+          var row7 = document.getElementById("row7");
+          var row8 = document.getElementById("row8");
+          
+          
+
+          var cell1 = document.getElementById("cell1");
+          var cell2 = document.getElementById("cell2");
+          var cell3 = document.getElementById("cell3");
+          var cell4 = document.getElementById("cell4");
+          var cell5 = document.getElementById("cell5");
+          var cell6 = document.getElementById("cell6");
+          var cell7 = document.getElementById("cell7");
+          var cell8 = document.getElementById("cell8");
+          
+
+
+          var linkInserted = false; 
+          var linkOpened = false;
+          var link;
+          
+          row1.addEventListener("mouseover", function() {
+            if (!linkInserted && !linkOpened) {
+              cell1.textContent = "(+)";
+            }
+          });
+
+          row1.addEventListener("mouseout", function() {
+            if (!linkInserted || linkOpened) {
+              cell1.textContent = "Canada";
+            }
+          });
+
+          // Create link when cell2 is clicked
+            cell1.addEventListener("click", function(event) {
+              if (!linkInserted) {
+                var link = document.createElement("a");
+                link.href = "https://smokesociety.ca/"; // Change this to your desired URL
+                link.textContent = "(+)";
+                link.target = "_blank"; // Opens the link in a new tab/window
+                cell1.textContent = ''; // Clear existing content
+                cell1.appendChild(link);
+                linkInserted = true;
+                link.click();
+                location.reload();
+              }
+              // Open the link when clicked within cell2
+              if (event.target === cell1 || cell1.contains(event.target)) {
+                if (!linkOpened) {
+                  linkOpened = true;
+                } else {
+                  window.open(link.href, '_blank');
+                }
+              }
+            });
+
+          row2.addEventListener("mouseover", function() {
+            if (!linkInserted && !linkOpened) {
+              cell2.textContent = "(+)";
+            }
+          });
+
+          row2.addEventListener("mouseout", function() {
+            if (!linkInserted || linkOpened) {
+              cell2.textContent = "France";
+            }
+          });
+
+          // Create link when cell2 is clicked
+            cell2.addEventListener("click", function(event) {
+              if (!linkInserted) {
+                var link = document.createElement("a");
+                link.href = "https://glose.com/what-is-glose"; // Change this to your desired URL
+                link.textContent = "(+)";
+                link.target = "_blank"; // Opens the link in a new tab/window
+                cell2.textContent = ''; // Clear existing content
+                cell2.appendChild(link);
+                linkInserted = true;
+                link.click();
+                location.reload();
+              }
+             
+            });
+
+            
+
+          row3.addEventListener("mouseover", function() {
+            if (!linkInserted && !linkOpened) {
+              cell3.textContent = "(+)";
+            }
+          });
+
+          row3.addEventListener("mouseout", function() {
+            if (!linkInserted || linkOpened) {
+              cell3.textContent = "Japan";
+            }
+          });
+
+
+          cell3.addEventListener("click", function(event) {
+              if (!linkInserted) {
+                var link = document.createElement("a");
+                link.href = "https://www.ga-tech.co.jp/"; // Change this to your desired URL
+                link.textContent = "(+)";
+                link.target = "_blank"; // Opens the link in a new tab/window
+                cell3.textContent = ''; // Clear existing content
+                cell3.appendChild(link);
+                linkInserted = true;
+                link.click();
+                location.reload();
+              }
+              
+          });
+
+          row4.addEventListener("mouseover", function() {
+            if (!linkInserted && !linkOpened) {
+              cell4.textContent = "(+)";
+            }
+          });
+
+          row4.addEventListener("mouseout", function() {
+            if (!linkInserted || linkOpened) {
+              cell4.textContent = "Canada";
+            }
+          });
+
+
+          cell4.addEventListener("click", function(event) {
+              if (!linkInserted) {
+                var link = document.createElement("a");
+                link.href = "https://www.lerock.net//"; // Change this to your desired URL
+                link.textContent = "(+)";
+                link.target = "_blank"; // Opens the link in a new tab/window
+                cell4.textContent = ''; // Clear existing content
+                cell4.appendChild(link);
+                linkInserted = true;
+                link.click();
+                location.reload();
+              }
+              
+          });
+
+          
+          
+
+
+          row5.addEventListener("mouseover", function() {
+            if (!linkInserted && !linkOpened) {
+              cell5.textContent = "(+)";
+            }
+          });
+
+          row5.addEventListener("mouseout", function() {
+            if (!linkInserted || linkOpened) {
+              cell5.textContent = "United States";
+            }
+          });
+
+          cell5.addEventListener("click", function(event) {
+              if (!linkInserted) {
+                var link = document.createElement("a");
+                link.href = "https://tscglobaltrading.com/"; // Change this to your desired URL
+                link.textContent = "(+)";
+                link.target = "_blank"; // Opens the link in a new tab/window
+                cell5.textContent = ''; // Clear existing content
+                cell5.appendChild(link);
+                linkInserted = true;
+                link.click();
+                location.reload();
+              }
+              
+            });
+
+          
+
+          row6.addEventListener("mouseover", function() {
+            if (!linkInserted && !linkOpened) {
+              cell6.textContent = "(+)";
+            }
+          });
+
+          row6.addEventListener("mouseout", function() {
+            if (!linkInserted || linkOpened) {
+              cell6.textContent = "Japan";
+            }
+          });
+
+          cell6.addEventListener("click", function(event) {
+              if (!linkInserted) {
+                var link = document.createElement("a");
+                link.href = "https://gbbofficial.com/"; // Change this to your desired URL
+                link.textContent = "(+)";
+                link.target = "_blank"; // Opens the link in a new tab/window
+                cell6.textContent = ''; // Clear existing content
+                cell6.appendChild(link);
+                linkInserted = true;
+                link.click();
+                location.reload();
+              }
+              
+            });
+
+          row7.addEventListener("mouseover", function() {
+            if (!linkInserted && !linkOpened) {
+              cell7.textContent = "(+)";
+            }
+          });
+
+          row7.addEventListener("mouseout", function() {
+            if (!linkInserted || linkOpened) {
+              cell7.textContent = "India";
+            }
+          });
+
+
+          cell7.addEventListener("click", function(event) {
+              if (!linkInserted) {
+                var link = document.createElement("a");
+                link.href = "https://shreeumiyaenterprise.in/"; // Change this to your desired URL
+                link.textContent = "(+)";
+                link.target = "_blank"; // Opens the link in a new tab/window
+                cell7.textContent = ''; // Clear existing content
+                cell7.appendChild(link);
+                linkInserted = true;
+                link.click();
+                location.reload();
+              }
+              
+            });
+
+          row8.addEventListener("mouseover", function() {
+            if (!linkInserted && !linkOpened) {
+              cell8.textContent = "(+)";
+            }
+          });
+
+          row8.addEventListener("mouseout", function() {
+            if (!linkInserted || linkOpened) {
+              cell8.textContent = "Japan";
+            }
+          });
+
+
+          cell8.addEventListener("click", function(event) {
+              if (!linkInserted) {
+                var link = document.createElement("a");
+                link.href = "https://next.junni.co.jp/"; // Change this to your desired URL
+                link.textContent = "(+)";
+                link.target = "_blank"; // Opens the link in a new tab/window
+                cell8.textContent = ''; // Clear existing content
+                cell8.appendChild(link);
+                linkInserted = true;
+                link.click();
+                location.reload();
+              }
+              
+            });
+
+                 
+
+        </script>
+
+        
+
+    </body>
+</html>
