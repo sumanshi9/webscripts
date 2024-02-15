@@ -54,8 +54,8 @@
 
             opacity: 0;
             transform: translateY(-100%);
-            animation: slideInFromTop 3s ease forwards;;
-            animation-delay: 2s;
+            animation: slideInFromTop 0.1s ease forwards;;
+            animation-delay: 1s;
             font-size: 32px;
             color: white;
             font-family: 'League Spartan', sans-serif;
@@ -150,61 +150,37 @@
               margin: 0 auto;
               padding: 50px;
               overflow: hidden;
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              /* padding: 20px; */
+              
             }
 
-            .input-group {
-              margin-bottom: 7px;
-            }
-
-            .input-group label {
+            input[type=text], select {
+              width: 100%;
+              padding: 12px 20px;
+              margin: 8px 0;
               display: inline-block;
-              width: 100%; /* Adjust as needed */
-              font-weight: bolder;
-              font-family: 'League Spartan', sans-serif;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
             }
 
-            .input-group input,
-            .input-group textarea {
-              font-family: Georgia, "Times New Roman", Times, serif;
-              background: rgba(255,255,255,.1);
+            input[type=submit] {
+              width: 100%;
+              background-color: #4CAF50;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
               border: none;
               border-radius: 4px;
-              font-size: 15px;
-              margin: 0;
-              outline: 0;
-              padding: 10px;
-              width: 100%;
-              box-sizing: border-box; 
-              -webkit-box-sizing: border-box;
-              -moz-box-sizing: border-box; 
-              background-color: #e8eeef;
-              color:#64776f99;
-              -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-              box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-              margin-bottom: 30px;
-            }
-
-            .input-group textarea{
-              height: 80px;
-            }
-
-
-            .input-group button {
-              padding: 8px 15px;
-              background-color: #000000;
-              color: #fff;
-              /* font-weight: bold; */
-              font-size: 20px;
-              border: none;
               cursor: pointer;
-              height: 50px;
-              width:100%;
-              border-radius: 5px;
             }
 
-            .input-group button:hover {
-              background-color: #969696;
+            input[type=submit]:hover {
+              background-color: #45a049;
             }
+
 
             
 
@@ -255,29 +231,28 @@
               <source src="videos/v32.mp4" type="video/mp4">
             </video> -->
             <div class="overlay"></div>
-            <form action="https://api.web3forms.com/submit" method="POST" class>
+            <form action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="0e5ed0c8-d66a-42ba-8de8-987cb8789c51">
+
+              
               <div class="form-container">
-                <div class="input-group">
-                  <label for="name">Name:</label>
+
+                <label for="name">Name:</label>
                   <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-                <div class="input-group">
-                  <label for="contact">Contact Number:</label>
+
+                <label for="contact">Contact Number:</label>
                   <input type="text" id="contact" name="contact" placeholder="Enter your contact number">
-                </div>
-                <div class="input-group">
-                  <label for="email">Email:</label>
+
+                <label for="email">Email:</label>
                   <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-                
-                <div class="input-group">
-                  <label for="message">Message:</label>
+
+                <label for="message">Message:</label>
                   <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
-                </div>
-                <div class="input-group">
-                  <button type="submit">Submit</button>
-                </div>
+
+                <button type="submit">Submit</button>
+
+
+                
               </div>
               
               
