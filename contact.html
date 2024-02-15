@@ -120,18 +120,18 @@
             .r-container{
               flex: 60%;
               background-color: white;
-              position: relative;
+              /* position: relative; */
 
             }
 
-            .r-container video{
+            /* .r-container video{
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
               object-fit: cover;
-            }
+            } */
 
             .overlay {
               position: absolute;
@@ -230,11 +230,11 @@
             <!-- <video autoplay loop muted playsinline>
               <source src="videos/v32.mp4" type="video/mp4">
             </video> -->
-            <div class="overlay"></div>
+            <!-- <div class="overlay"></div> -->
             <form>
               Name<input type="text" name="name">
               Email<input type="email" name="email">
-              Message<textarea name="message">
+              Message<textarea name="message" rows="4" placeholder="Enter your message"></textarea>
             </form>
             <!-- <form action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="0e5ed0c8-d66a-42ba-8de8-987cb8789c51">
