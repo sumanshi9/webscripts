@@ -52,21 +52,45 @@
                 transform: translateY(0);
           }} 
           
-          .container{
-              margin-top: 80px;
-              margin-left: 100px;
-              height: 100vh;
+          .projects-container{
+              padding-top: 80px;
+              padding-left: 100px;
+              padding-right: 100px;
+              height: 150vh;
+          }
+
+          .projects-container h1{
+
+              color: white;  
+              font-family:'League Spartan', sans-serif; 
+              font-size: 120px;
+              font-weight: bolder;
+              animation: slideInFromTop 1s ease-out;
+
           }
 
           .container2{              
-              height: 100vh; 
-              background-image: url('images/bg3.jpg');
+              height: 180vh; 
+              /* background-image: url('images/bg3.jpg');
               background-size: cover; 
-              background-position: center;
-              width: 100%;
-              position: relative; 
-              margin-top: 80px;
-              margin-left: 100px;
+              background-position: center; */
+              background-color: white;
+              width: 100%; 
+              padding-top: 80px;
+              padding-left: 100px;
+              padding-right: 100px;
+              
+              
+            }
+
+            .container2 h1{
+
+              color: black;  
+              font-family:'League Spartan', sans-serif; 
+              font-size: 120px;
+              font-weight: bolder;
+              animation: slideInFromTop 1s ease-out;
+
             }
 
             .container2 ul{
@@ -75,11 +99,32 @@
             }
 
             .container2 li{
-              color: white;
+              color: black;
               font-size: 25px;
+              font-weight: bolder;
               word-spacing: 4px;
               font-family: 'League Spartan', sans-serif;
               padding: 8px;           
+            }
+
+            .sub-container2{
+              display: flex;
+            }
+
+            .sub-img-container{
+              background-image: url(images/work-success.jpg);
+              background-size: cover;
+              background-position: center;
+              border-radius: 5px;
+              /* background-color: rgb(135, 151, 151); */
+              width: 60%;
+              height: 80vh;
+            }
+
+            .sub-cont-container{
+              height: 80vh;
+              width: 40%;
+              /* background-color: rgba(114, 89, 89, 0.311); */
             }
 
             /* .container2 video{
@@ -96,9 +141,25 @@
             } */   
 
             .sub-container{
-              margin-left: 100px;
-              height: 100vh;
+             
+              height: 130vh;
+              background-color: white;
+              width: 100%; 
+              padding-top: 80px;
+              padding-left: 100px;
+              padding-right: 100px;
             }
+
+
+            .sub-container h1{
+             
+              color: black;  
+              font-family:'League Spartan', sans-serif; 
+              font-size: 120px;
+              font-weight: bolder;
+              animation: slideInFromTop 1s ease-out;
+           }
+
 
             .img1 {
                 width: 100%; 
@@ -162,17 +223,17 @@
             
             .tech-icons{
               width: 100%;
-              height: auto;
-              background-color: rgba(0, 0, 0, 0);
-              padding: 40px;
+              height: 40vh;
+              /* background-color: rgba(127, 137, 159, 0.866); */
+              padding: 40px 250px;
               border-radius: 10px;
               
             }
 
             .tech-icons-img{
-              width: 70px;
-              height: 70px;
-              margin-right: 60px;
+              width: 60px;
+              height: 60px;
+              margin-right: 25px;
               margin-bottom: 100px;
               
             }
@@ -193,7 +254,7 @@
 
               font-family: 'League Spartan', sans-serif;
               text-align: center;
-              font-size: 180px;
+              font-size: 220px;
               font-weight: bolder;
               letter-spacing: 2px;
               word-spacing: 5px;
@@ -270,7 +331,7 @@
               position: relative;  */
               /* filter: blur(2px); */
               width: 80%; /* Extends the container to the maximum width of the page */
-              height: 100vh;      
+              height: 120vh;      
               color: white;
               margin: 0 auto;
 
@@ -314,8 +375,35 @@
             <h2 class="int2">At Webscripts, we're all about embracing your awesome ideas and crafting some seriously cool, tailor-made solutions to meet every single one of your needs. We're here to give your business that extra oomph online! We totally get how precious your business is, which is why we offer a bunch of rad services like branding, whipping up killer websites, brainstorming epic business ideas, boosting your SEO game, and turning your data into something seriously eye-catching! Let's make your online presence pop together! </h2>
                       
         </div>
-        <div class="container">
-          <h1>Check out our wizardy in action!</h1>
+
+        <div class="container2">
+          <!-- <video autoplay loop muted>
+            <source src="videos/v5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video> -->
+          
+          <h1>Your go-to guide for reaching success on your website</h1>
+          <div class="sub-container2">
+            
+            <div class="sub-cont-container">
+              <ul>
+                <li>Active social media presence</li>
+                <li>Reliable hosting service</li>
+                <li>User-friendly design</li>
+                <li>Fast loading speed</li>
+                <li>Mobile responsiveness</li>
+                <li>Secure payment options</li>            
+                <li>Effective SEO</li>
+                <li>Engaging content</li>
+              </ul>
+            </div>
+            <div class="sub-img-container"> </div>
+          </div>
+        </div>
+
+
+        <div class="projects-container">
+          <h1>Check out what we've been up to!</h1>
           <br><br><br>
           <table>
             <tr id="row1">
@@ -356,30 +444,13 @@
           </table> 
         </div>
 
-        <div class="container2">
-          <!-- <video autoplay loop muted>
-            <source src="videos/v5.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video> -->
-          <br><br><br><br><br>
-          <h1>Your site's ultimate recipe for triumph!</h1>
-          <ul>
-            <li>Active social media presence</li>
-            <li>Reliable hosting service</li>
-            <li>User-friendly design</li>
-            <li>Fast loading speed</li>
-            <li>Mobile responsiveness</li>
-            <li>Secure payment options</li>            
-            <li>Effective SEO</li>
-            <li>Engaging content</li>
-          </ul>
-        </div>
+        
 
         <div class="sub-container">
 
           <div>
-            <br><br><br><br><br><br>
-            <h1 class="animate-slide">The gadgetry that gets our gears turning!</h1>
+            
+            <h1 class="animate-slide">Our technology stack</h1>
 
           </div>
 
@@ -402,7 +473,7 @@
             <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original-wordmark.svg" />            
             <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />   
             <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />            
-            <img class= "tech-icons-img" src="images/mysql.png" />
+            <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
             <img class= "tech-icons-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
           </div>
         </div>
@@ -450,7 +521,11 @@
         </footer>
 
 
-        <script src="js/work.js"></script>
+        <script src="js/work.js">      
+
+                 
+
+        </script>
 
         
 
