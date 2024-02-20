@@ -16,6 +16,11 @@ body {
   /* overflow: hidden; */
   }
 
+.primary-container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  
+}
 
 .bg-video {
   position: fixed;
@@ -250,7 +255,7 @@ font-size: 35px;
 }
 
 .container-2 h1{
-  font-size: 120px;
+  font-size: 100px;
   font-family: 'League Spartan', sans-serif;;
   font-weight: bolder;
   padding-left: 15%;
@@ -333,7 +338,7 @@ font-size: 35px;
 
 .container-3 h1{
 
-  font-size: 120px;
+  font-size: 100px;
   font-family: 'League Spartan', sans-serif;;
   font-weight: bolder;
   padding-left: 15%;
@@ -379,15 +384,15 @@ font-size: 35px;
 .faq-container{
   
   background-color: black;
-  height: 170vh;
+  height: 150vh;
   margin: 0;
   padding: 100px 300px;
 }
 
-.faq-container h2{
+.faq-container h1{
   color: white;
   font-family: 'League Spartan', sans-serif; 
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .faq-container .accordion {
