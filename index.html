@@ -14,6 +14,38 @@
         
         <link rel="stylesheet" href="css/logocss.css">
         <link rel="stylesheet" href="css/footer.css">
+
+        <script>
+            // script.js
+
+window.addEventListener('DOMContentLoaded', () => {
+    const mainContent = document.getElementById('primary-container');
+
+    // Load content based on URL path
+    const loadPage = () => {
+        let path = window.location.pathname;
+        if (path === '/') {
+            path = '/index';
+        }
+        fetch(`${path}.html`)
+            .then(response => response.text())
+            .then(html => {
+                mainContent.innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading page:', error);
+                mainContent.innerHTML = '<p>Error loading page.</p>';
+            });
+    };
+
+    // Load initial page
+    loadPage();
+
+    // Update content when navigating with browser back/forward buttons
+    window.addEventListener('popstate', loadPage);
+});
+
+        </script>
         
 
     </head>
@@ -22,30 +54,31 @@
             <source src="videos/v4.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video> -->
-        <div class="primary-container">
+        
+        <div class="primary-container"></div>
             <div class="topnav">
                 <div class="flip-container" >
-                    <a class="active" href="index.html"><span>w</span><span>e</span><span>b</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>s</span><span>.</span></a>
+                    <a class="active" href="/"><span>w</span><span>e</span><span>b</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>s</span><span>.</span></a>
                 </div>
                 <div class="topnav-right">
     
                     <div class="flip-container">
-                        <a href="about.html" style="font-size: 35px;"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
+                        <a href="/about" style="font-size: 35px;"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
                       </div>
                       <div class="flip-container">
                         <a href="" style="font-size: 35px;"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a>                
                       </div>
                       <div class="flip-container">
-                        <a href="work.html" style="font-size: 35px;"><span>W</span><span>o</span><span>r</span><span>k</span></a>
+                        <a href="/work" style="font-size: 35px;"><span>W</span><span>o</span><span>r</span><span>k</span></a>
                       </div>
                       <div class="flip-container">
-                        <a href="contact.html" style="font-size: 35px;"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a>
+                        <a href="/contact" style="font-size: 35px;"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a>
                       </div> 
                       
                 </div>    
             </div>
     
-            
+        
             <div class="mid-content">
                 <div class="left-container">
                     <p>Inspire. Create. Connect.</p>
@@ -167,6 +200,7 @@
         </footer>
 
         <script src="js/index.js"></script>
+        
 
     </body>
 </html>
