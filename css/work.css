@@ -234,7 +234,7 @@ td{
   margin-right: 250px;
   animation: slideInFromTop2 2s ease-out;
   /* animation: slideInFromTop2 1s ease-out forwards; */
-  /* animation-delay: 1s; */
+  /* animation-delay: 0.5s; */
 
 }
 
@@ -242,7 +242,7 @@ td{
 @keyframes slideInFromTop2 {
 0% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-20%);
     visibility: hidden;
 }
 100% {
@@ -305,5 +305,32 @@ td{
   height: 120vh;      
   color: white;
   margin: 0 auto;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .intro-text{
+    width: 100%;
+    padding: 50px 30px;
+    text-align: center;
+    height:80vh;
+    
+  }
+
+  .intro-text .int1{
+    font-size: 80px;
+    font-weight: normal;
+    margin: 0px;
+    display: inline-block;
+  }
+
+  .intro-text .int2{
+    margin-top: 20px;
+    font-size: 15px;
+    display: inline-block;
+  }
+
 
 }
