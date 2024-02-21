@@ -212,11 +212,12 @@ padding-bottom: 0;
 @media only screen and (max-width: 768px){
 
   .contact-mid-content{
-    background-color: #64776f;
-    height:90vh;
+    background-color: white;
+    height:120vh;
     width: 90%;
     margin: 25px;
     margin-bottom: 100px;
+    display: block;
 
   }
 
@@ -224,10 +225,21 @@ padding-bottom: 0;
 
   } */
 
+  .contact-mid-content .l-container{
+    /* height: 70vh; */
+  
+    height: 30vh;
+    background-color: rgb(26, 76, 76);
+  }
+
+  .contact-mid-content .r-container{
+    height: 85vh;
+  }
+
   .contact-mid-content .r-container form{
 
     width:100%;
-    padding: 10px;
+    padding: 30px;
     margin: 0;   
 
   }
@@ -257,6 +269,23 @@ padding-bottom: 0;
 
   .contact-mid-content .r-container label{
     font-size: 15px;
+  }
+
+  .contact-mid-content .r-container .message-box{
+    padding-bottom: 0;
+
+  }
+
+  .contact-mid-content .r-container button{
+    width: 100px;
+    height: 5vh;
+    font-size: 10px;
+  }
+
+  .contact-mid-content .r-container #submit-button{
+    width: 100%;
+    text-align: center;
+    
   }
   
 }
