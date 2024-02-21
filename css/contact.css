@@ -1,0 +1,263 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+.container h3{
+  color: white;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 60px;
+  margin-top: 70px;
+  font-weight: lighter;
+  text-align: center;
+  animation: slideInFromTop2 1s ease-out;
+
+}
+
+@keyframes slideInFromTop2 {
+0% {
+    opacity: 0;
+    transform: translateY(-70%);
+    visibility: hidden;
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}}
+
+.container p{
+
+opacity: 0;
+transform: translateY(-100%);
+animation: slideInFromTop 3s ease forwards;;
+animation-delay: 1s;
+font-size: 32px;
+color: white;
+font-family: 'League Spartan', sans-serif;
+font-weight: lighter;
+text-align: center;
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
+@keyframes slideInFromTop {
+0% {
+  
+  transform: translateY(-100%);
+  opacity: 0;
+}
+100% {
+  
+  transform: translateY(0);
+  opacity: 1;
+}}
+
+
+@media only screen and (max-width: 768px){
+
+  .container{
+    /* background-color: #64776f; */
+    margin-top: 10px;
+  }
+
+  .container h3{
+    font-size: 35px;
+  }
+
+  .container p{
+    font-size: 15px;
+    padding: 0px 70px;
+  }
+
+}
+
+.contact-mid-content{
+  background-color: white;
+  height: 90vh;
+  width: 70%; /* Set the desired width of the container */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 300px;
+  display: flex;
+  animation: slideUp 2s forwards;
+  animation-delay: 2s;
+  opacity: 0;
+  
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contact-mid-content:hover .l-container {
+  filter: grayscale(0%);
+}
+
+
+
+.l-container{
+  flex: 40%;
+  background-image: url("images/contact.jpg");
+  background-size: cover;
+  background-position:center top;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease forwards; /* Add transition for smooth effect */
+}
+
+.r-container{
+  flex: 60%;
+  background-color: white;
+  position: relative;
+
+}
+
+/* .r-container video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5);  Semi-transparent black overlay 
+}*/
+
+
+
+.form-container {
+  width: 100%;
+  height: 100vh;
+  max-width: 500px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.input-group {
+  margin-bottom: 7px;
+}
+
+.input-group label {
+  display: inline-block;
+  width: 100%; /* Adjust as needed */
+  font-weight: bolder;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.input-group input,
+.input-group textarea {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: rgba(255,255,255,.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  background-color: #e8eeef;
+  color:#64776f;
+  -webkit-box-shadow: 0 1px 0 rgba  (0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+.input-group textarea{
+  height: 120px;
+  margin-bottom: 50px ;
+
+}
+
+
+.input-group button {
+  padding: 8px 15px;
+  background-color: #000000;
+  color: #fff;
+  /* font-weight: bold; */
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  height: 50px;
+  width:100%;
+  border-radius: 5px;
+  transition: background-color 2s ease;
+}
+
+.input-group button:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+            
+@media only screen and (max-width: 768px){
+
+  .contact-mid-content{
+    background-color: #64776f;
+    height:90vh;
+    width: 90%;
+    margin: 25px;
+    margin-bottom: 100px;
+
+  }
+
+  .contact-mid-content .l-container{
+
+  }
+
+  .contact-mid-content .r-container form{
+
+    width:100%;
+    padding: 10px;
+    margin: 0;   
+
+  }
+
+  .contact-mid-content .r-container form .form-container{
+
+    width:100%;
+    padding: 0;
+    margin: 0;   
+
+  }
+
+  .contact-mid-content .r-container .input-group{
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+  }
+
+  .contact-mid-content .r-container .input-group input,
+  .contact-mid-content .r-container .input-group textarea{
+    
+    font-size:15px   ;
+  }
+
+
+  .contact-mid-content .r-container label{
+    font-size: 15px;
+  }
+  
+}
+            
