@@ -402,6 +402,13 @@
         margin: 0;
     }
 
+    .abus-card-containers .abus-col-1 .abus-list-items ul,
+    .abus-card-containers .abus-col-2 .abus-list-items ul,
+    .abus-card-containers .abus-col-3 .abus-list-items ul{
+
+        padding: 0;
+    }
+
     .abus-card-containers .abus-col-1 .abus-list-items li,
     .abus-card-containers .abus-col-2 .abus-list-items li,
     .abus-card-containers .abus-col-3 .abus-list-items li{
