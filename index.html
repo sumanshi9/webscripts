@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="topnav-right">
     
-                    <div class="flip-container">
+                    <div class="flip-container-navbar">
                         <a href="/about" style="font-size: 35px;"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a>
                       </div>
                       <div class="flip-container">
@@ -78,11 +78,8 @@ window.addEventListener('DOMContentLoaded', () => {
                       </div>
                       <div class="flip-container">
                         <a href="/contact" style="font-size: 35px;"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a>
-                      </div> 
-                      
-                </div>  
-                
-                 
+                      </div>                       
+                </div>              
             </div>
     
         
@@ -90,21 +87,20 @@ window.addEventListener('DOMContentLoaded', () => {
                 <div class="left-container">
                     <p>Inspire. Create. Connect.</p>
                     <p>Where Webscripts transform ideas into stunning websites. Inspire your audience with captivating designs, create seamless user experiences, and connect with your customers like never before. Let's build your online presence together.</p>
-                    <a href="contact.html"><button class="proposal-button">Contact Us</button></a>
+                    <a href="contact.html"  class="button-container"><button class="proposal-button">Contact Us</button></a>
                 </div>
-                <div class="right-container">
-                </div>
+                <div class="right-container"></div>
                 
             </div>
     
             <div class="partners-bar">
                 <p>Our Trusted Partners</p>
                 <div class="partners-logo">
-                    <img class="logo1" src="images/partners-logo-1.png" alt="" width="150px" height="70px">
-                    <img class="logo2" src="images/partners-logo-2.png" alt="" width="150px" height="70px">
-                    <img class="logo3" src="images/partners-logo-3.jpg" alt="" width="150px" height="70px">
-                    <img class="logo4" src="images/partners-logo-4.png" alt="" width="150px" height="70px">
-                    <img class="logo5" src="images/partners-logo-5.jpg" alt="" width="150px" height="70px">
+                    <img class="logo1" src="images/partners-logo-1.png" alt="">
+                    <img class="logo2" src="images/partners-logo-2.png" alt="">
+                    <img class="logo3" src="images/partners-logo-3.jpg" alt="">
+                    <img class="logo4" src="images/partners-logo-4.png" alt="">
+                    <img class="logo5" src="images/partners-logo-5.jpg" alt="">
                     
                 </div>
             </div>
@@ -157,7 +153,7 @@ window.addEventListener('DOMContentLoaded', () => {
             <div class="container-3">
                 <h1>Innovative Mastery: Strategize, Design, Construct</h1>
                 <div class="sub-container">
-                    <p>At webscripts, our team employs a diverse range of tools to <b>hey </b>strategize, design, and construct with precision and innovation. Through careful planning and creative execution, we bring projects to life, ensuring exceptional results every step of the way.</p>
+                    <p>At webscripts, our team employs a diverse range of tools to strategize, design, and construct with precision and innovation. Through careful planning and creative execution, we bring projects to life, ensuring exceptional results every step of the way.</p>
                     <div class="image-container">
                     </div>
                 </div>
@@ -209,9 +205,9 @@ window.addEventListener('DOMContentLoaded', () => {
         <script src="js/index.js"></script>
         <script>
             function toggleMenu() {
-  var menuRight = document.querySelector(".topnav-right");
-  menuRight.classList.toggle("active");
-}
+            var menuRight = document.getElementById("Topnav").getElementsByClassName("topnav-right")[0];
+            menuRight.classList.toggle("active");
+            }
 
         </script>
         
