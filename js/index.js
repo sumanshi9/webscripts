@@ -26,3 +26,9 @@ if (event.deltaY > 0) {
     behavior: 'smooth'});
     }
 });
+
+
+function toggleMenu() {
+    var menuRight = document.getElementById("Topnav").getElementsByClassName("topnav-right")[0];
+    menuRight.classList.toggle("active");
+}

@@ -372,16 +372,16 @@ font-size: 35px;
   font-weight: bold;
   color: rgb(135, 135, 135);
   margin-top: 25px;
-  margin-left: 250px;
+  margin-left: 100px;
   float: left;  
   
 }
 
 .partners-logo{
   display: flex;
-  margin-left: auto;
+  margin-left: 200px;
   overflow: hidden  ;
-  margin-right: 10px;
+  margin-right: 20px;
   /* overflow-x: hidden; */
 }
 
