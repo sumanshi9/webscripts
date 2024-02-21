@@ -107,9 +107,10 @@ padding-bottom: 0;
 
 .l-container{
   flex: 40%;
-  background-image: url("images/contact.jpg");
+  background-image: url("../images/contact.jpg");
   background-size: cover;
   background-position:center top;
+  background-color: #000000;
   filter: grayscale(100%);
   transition: filter 0.3s ease forwards; /* Add transition for smooth effect */
 }
@@ -213,7 +214,7 @@ padding-bottom: 0;
 }
 
             
-/* @media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
 
   .contact-mid-content{
     background-color: white;
@@ -288,5 +289,5 @@ padding-bottom: 0;
     
   }
   
-} */
+}
             
