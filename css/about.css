@@ -54,19 +54,54 @@
     display: flex; /* Use flexbox */
     flex-direction: column; /* Stack children vertically */
     justify-content: center; /* Center content vertically */
-    align-items: center;
-    
-
+    align-items: center;  
 }
 
 .abus-container-1 .intro-text p{
     font-family: 'League Spartan', sans-serif;
     font-size: 35px;
     font-weight: bolder;
-    text-align: center;
-    
+    text-align: center; 
 }
 
+
+@media only screen and (max-width: 768px) {
+
+    .abus-container-1{
+        padding: 0;
+        margin: 0;
+        height: 80vh;
+    }
+
+    .abus-container-1 h1{
+        font-size: 35px;        
+        padding-top: 30px;
+    }
+
+    .abus-container-1 .intro-content{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .abus-container-1 .intro-content .intro-video{
+        width: 90%; 
+        text-align: center;
+        height: 40vh;        
+        padding: 20px 0;
+    }
+
+    .abus-container-1 .intro-content .intro-text{
+        width: 100%; 
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    .abus-container-1 .intro-content .intro-text p{
+        font-size: 15px;
+    }
+
+}
 
 
 .abus-container-2{
@@ -121,6 +156,44 @@
     
 }
 
+
+@media only screen and (max-width: 768px) {
+
+    .abus-container-2{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .abus-container-2 h1{
+        font-size: 35px;
+        padding-top: 30px;
+    }
+
+    .abus-container-2 .mid-content{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .abus-container-2 .mid-content .mid-text{
+        width: 100%; 
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    .abus-container-2 .mid-content .mid-text p{
+        font-size: 15px;
+    }
+
+    .abus-container-2 .mid-content .img{
+        width: 90%; 
+        text-align: center;
+        height: 40vh;        
+        padding: 20px 0;
+    }
+
+}
 
 .abus-container-3{
     height: 160vh;
