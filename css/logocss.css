@@ -303,7 +303,7 @@ font-size: 35px;
       margin: 0;
       display: block; 
       width: 100%;
-      height: 100vh;
+      height: 90vh;
       justify-content: center;
       align-items: center;
       
@@ -313,7 +313,7 @@ font-size: 35px;
       width: 100%;
       max-width: 100%; 
       text-align: center;
-      height: 50vh;
+      height: 40vh;
     }
 
     .mid-content .left-container p:first-of-type {
@@ -409,10 +409,10 @@ font-size: 35px;
   }
 
   .partners-bar p{
-    font-size: 10px;
-    margin: 0 20px;
-    width: 90px;
-    /* padding: 10px; */
+    font-size: 8px;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 10px;
   }
 
   .partners-bar .partners-logo{
