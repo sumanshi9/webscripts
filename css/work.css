@@ -267,27 +267,92 @@ html, body {
 }
 
 
+table{
+  width: 100%;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+@keyframes slideInFromLeft {
+0% {
+    transform: translateX(-50%);
+}
+100% {
+    transform: translateX(0);
+}
+}
+
+tr{
+  color: white;
+  font-size: 35px;
+  font-weight: lighter;
+  float: left;
+  padding: 0;
+  margin: 0;
+  /* border-bottom: 1px solid white; */
+}
+
+tr:hover{
+  border-bottom: 1px solid white;
+} 
+
+td{
+  text-align: left;
+}
+.client-name{
+  float: left;
+  width: 900px;
+  /* margin-right: 900px; */
+}
+
+.client-location{
+  width: 260px;
+
+}
+
+#cell1, #cell2, #cell3, #cell4, #cell5, #cell6{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#cell1 a{
+  color: white;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+
 @media only screen and (max-width: 768px) {
 
   .projects-container{
     width: 100%;
     margin: 0;
     padding: 50px 20px;    
-    height: 120vh;
+    height: 75vh;
+    
   }
 
   .projects-container h1{
-    font-size: 35px;
+    font-size: 35px;    
+    margin-bottom: 50px; 
   }
 
   .projects-container table{
     width: 100%;    
-    margin: 0;
+    margin: 0;  
+  }
+
+  .projects-container tr{
+    width: 100%;
     
+    padding: 0px 20px;
   }
 
   .projects-container td{
     font-size: 15px;
+    /* background-color: rgba(98, 124, 124, 0.386); */
+    width:250px;
   }
 
 
@@ -345,48 +410,6 @@ html, body {
   /* padding: 0 0 1% 1%; */         
 }
 
-table{
-  width: 100%;
-  margin-top: 150px;
-  margin-left: 100px;
-}
-
-@keyframes slideInFromLeft {
-0% {
-    transform: translateX(-50%);
-}
-100% {
-    transform: translateX(0);
-}
-}
-
-tr{
-  color: white;
-  font-size: 35px;
-  font-weight: lighter;
-  float: left;
-  padding: 0;
-  margin: 0;
-  /* border-bottom: 1px solid white; */
-}
-
-tr:hover{
-  border-bottom: 1px solid white;
-} 
-
-td{
-  text-align: left;
-}
-.client-name{
-  float: left;
-  width: 900px;
-  /* margin-right: 900px; */
-}
-
-.client-location{
-  width: 260px;
-
-}
 
 
 .tech-icons{
@@ -406,14 +429,4 @@ td{
   
 }
 
-#cell1, #cell2, #cell3, #cell4, #cell5, #cell6{
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-#cell1 a{
-  color: white;
-  text-decoration: none;
-  cursor:pointer;
-}
