@@ -267,6 +267,31 @@ html, body {
 }
 
 
+@media only screen and (max-width: 768px) {
+
+  .projects-container{
+    width: 100%;
+    margin: 0;
+    padding: 50px 20px;    
+    height: 120vh;
+  }
+
+  .projects-container h1{
+    font-size: 35px;
+  }
+
+  .projects-container table{
+    width: 100%;    
+    margin: 0;
+    
+  }
+
+  .projects-container td{
+    font-size: 15px;
+  }
+
+
+}
 /* .container2 video{
   position: absolute;
   top: 50%;
