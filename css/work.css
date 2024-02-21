@@ -3,6 +3,231 @@ html, body {
   overflow-x: hidden;
 }
 
+
+.int1{
+
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  font-size: 220px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  margin-top: 80px;              
+  margin-left:250px;
+  margin-right: 250px;
+  animation: slideInFromTop2 2s ease-out;
+  /* animation: slideInFromTop2 1s ease-out forwards; */
+  /* animation-delay: 0.5s; */
+
+}
+
+
+@keyframes slideInFromTop2 {
+0% {
+    opacity: 0;
+    transform: translateY(-20%);
+    visibility: hidden;
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}} 
+
+
+:root {
+  --animation-delay: 0.01s;
+}
+
+
+.int2{
+
+  font-family: 'League Spartan', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+  font-size: 21px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  /* margin-left:220px; */
+  /* margin-right: 220px; */
+  /* border-right: 2px solid white; */
+  /* opacity: 0; */
+  /* animation: slideFromBottom 1s ease-out forwards; */
+
+  
+                                      
+}
+
+.int2 span{
+  opacity: 0;
+  animation-name: typewriter;
+  animation-fill-mode: forwards;
+  animation-duration: 0s;
+  animation-delay: calc(2s + var(--animation-order) * var(--animation-delay));
+}
+
+@keyframes typewriter {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.intro-text{
+  /* background-image: url('images/bg7.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;  */
+  /* filter: blur(2px); */
+  width: 80%; /* Extends the container to the maximum width of the page */
+  height: 120vh;      
+  color: white;
+  margin: 0 auto;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .intro-text{
+    width: 100%;
+    padding: 50px 30px;
+    text-align: center;
+    height:80vh;
+    
+  }
+
+  .intro-text .int1{
+    font-size: 80px;
+    font-weight: normal;
+    margin: 0px;
+    display: inline-block;
+  }
+
+  .intro-text .int2{
+    margin-top: 20px;
+    font-size: 15px;
+    display: inline-block;
+  }
+}
+
+
+.container2{              
+  height: 180vh; 
+  /* background-image: url('images/bg3.jpg');
+  background-size: cover; 
+  background-position: center; */
+  background-color: white;
+  width: 100%; 
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.container2 h1{
+
+  color: black;  
+  font-family:'League Spartan', sans-serif; 
+  font-size: 100px;
+  font-weight: bolder;
+  text-align: center;
+  animation: slideInFromTop 1s ease-out;
+
+}
+
+.container2 ul{
+  padding-left: 60px;
+  margin-top: 80px;
+}
+
+.container2 li{
+  color: black;
+  font-size: 25px;
+  font-weight: bolder;
+  word-spacing: 4px;
+  font-family: 'League Spartan', sans-serif;
+  padding: 8px;           
+}
+
+.sub-container2{
+  display: flex;
+}
+
+.sub-img-container{
+  background-image: url("../images/work-success.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  /* background-color: rgb(135, 151, 151); */
+  width: 60%;
+  height: 80vh;
+}
+
+.sub-cont-container{
+  height: 80vh;
+  width: 40%;
+  /* background-color: rgba(114, 89, 89, 0.311); */
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .container2{
+    width: 100%;
+    margin: 0;
+    padding: 50px 20px;    
+    height: 120vh;
+  }
+
+  .container2 h1{
+    font-size: 35px;
+  }
+
+  .container2 .sub-container2 {
+
+    flex-direction: column;
+    
+  }
+
+  .container2 .sub-container2 .sub-cont-container{
+    width: 100%;
+    margin:0;
+    padding: 10px;
+    height: 20vh;
+  }
+
+  .container2 .sub-container2 .sub-cont-container ul{
+   margin: 0;
+   width: 100%;
+   padding: 0px 20px;
+   display: flex;
+  }
+
+  .container2 .sub-container2 .sub-cont-container li{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0;
+    background-color: rgb(142, 126, 157);
+    width: 100px;
+    height: 20px;
+  }
+
+  .container2 .sub-container2 .sub-img-container{
+    height: 40vh;
+    width: 100%;
+    order: 1;
+
+  }
+
+
+}
+
+
 .animate-slide{
   animation: slideInFromTop 1s ease-out forwards;
   animation-delay: 1s;
@@ -36,64 +261,6 @@ html, body {
 
 }
 
-.container2{              
-  height: 180vh; 
-  /* background-image: url('images/bg3.jpg');
-  background-size: cover; 
-  background-position: center; */
-  background-color: white;
-  width: 100%; 
-  padding-top: 80px;
-  padding-left: 100px;
-  padding-right: 100px;
-  
-  
-}
-
-.container2 h1{
-
-  color: black;  
-  font-family:'League Spartan', sans-serif; 
-  font-size: 100px;
-  font-weight: bolder;
-  text-align: center;
-  animation: slideInFromTop 1s ease-out;
-
-}
-
-.container2 ul{
-  padding-left: 60px;
-  margin-top: 80px;
-}
-
-.container2 li{
-  color: black;
-  font-size: 25px;
-  font-weight: bolder;
-  word-spacing: 4px;
-  font-family: 'League Spartan', sans-serif;
-  padding: 8px;           
-}
-
-.sub-container2{
-  display: flex;
-}
-
-.sub-img-container{
-  background-image: url(images/work-success.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  /* background-color: rgb(135, 151, 151); */
-  width: 60%;
-  height: 80vh;
-}
-
-.sub-cont-container{
-  height: 80vh;
-  width: 40%;
-  /* background-color: rgba(114, 89, 89, 0.311); */
-}
 
 /* .container2 video{
   position: absolute;
@@ -219,118 +386,4 @@ td{
   color: white;
   text-decoration: none;
   cursor:pointer;
-}
-
-.int1{
-
-  font-family: 'League Spartan', sans-serif;
-  text-align: center;
-  font-size: 220px;
-  font-weight: bolder;
-  letter-spacing: 2px;
-  word-spacing: 5px;
-  margin-top: 80px;              
-  margin-left:250px;
-  margin-right: 250px;
-  animation: slideInFromTop2 2s ease-out;
-  /* animation: slideInFromTop2 1s ease-out forwards; */
-  /* animation-delay: 0.5s; */
-
-}
-
-
-@keyframes slideInFromTop2 {
-0% {
-    opacity: 0;
-    transform: translateY(-20%);
-    visibility: hidden;
-}
-100% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-}} 
-
-
-:root {
-  --animation-delay: 0.01s;
-}
-
-
-.int2{
-
-  font-family: 'League Spartan', sans-serif;
-  font-weight: lighter;
-  text-align: center;
-  color: white;
-  font-size: 21px;
-  letter-spacing: 2px;
-  word-spacing: 5px;
-  /* margin-left:220px; */
-  /* margin-right: 220px; */
-  /* border-right: 2px solid white; */
-  /* opacity: 0; */
-  /* animation: slideFromBottom 1s ease-out forwards; */
-
-  
-                                      
-}
-
-.int2 span{
-  opacity: 0;
-  animation-name: typewriter;
-  animation-fill-mode: forwards;
-  animation-duration: 0s;
-  animation-delay: calc(2s + var(--animation-order) * var(--animation-delay));
-}
-
-@keyframes typewriter {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-
-.intro-text{
-  /* background-image: url('images/bg7.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;  */
-  /* filter: blur(2px); */
-  width: 80%; /* Extends the container to the maximum width of the page */
-  height: 120vh;      
-  color: white;
-  margin: 0 auto;
-
-}
-
-
-@media only screen and (max-width: 768px) {
-
-  .intro-text{
-    width: 100%;
-    padding: 50px 30px;
-    text-align: center;
-    height:80vh;
-    
-  }
-
-  .intro-text .int1{
-    font-size: 80px;
-    font-weight: normal;
-    margin: 0px;
-    display: inline-block;
-  }
-
-  .intro-text .int2{
-    margin-top: 20px;
-    font-size: 15px;
-    display: inline-block;
-  }
-
-
 }
