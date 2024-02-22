@@ -292,6 +292,10 @@
 .abus-card-containers .abus-col-2 .abus-list-items img,
 .abus-card-containers .abus-col-3 .abus-list-items img{
 
+    width: 60px; 
+    height: 60px;
+
+
     position: absolute;
     bottom: 0;
     right: 0;
@@ -303,7 +307,6 @@
         padding: 0;
         margin: 0;
         height: 70vh;
-        background-color: aliceblue;
     }
 
     .abus-container-3 h1{
@@ -320,14 +323,18 @@
     .abus-card-containers .abus-col-2,
     .abus-card-containers .abus-col-3{
 
-        height: 30vh;
+        height: 24vh;
+        padding-left: 10px;
+        
     } 
 
     .abus-card-containers .abus-col-1 h2,
     .abus-card-containers .abus-col-2 h2,
     .abus-card-containers .abus-col-3 h2{
-        font-size: 15px;
+        font-size: 12px;
+        font-weight: bold;
         padding: 10px;
+        padding-left: 0px;
     }
 
     .abus-card-containers .abus-col-1 .abus-list-items,
@@ -335,6 +342,10 @@
     .abus-card-containers .abus-col-3 .abus-list-items{
         padding: 0;
         margin: 0;
+
+        position: relative;
+        width: fit-content; 
+        width:90%;
     }
 
     .abus-card-containers .abus-col-1 .abus-list-items ul,
@@ -348,8 +359,21 @@
     .abus-card-containers .abus-col-2 .abus-list-items li,
     .abus-card-containers .abus-col-3 .abus-list-items li{
 
-        font-size: 10px;
+        font-size: 8px;
         margin-top:5px;
+
+    }
+
+
+    .abus-card-containers .abus-col-1 .abus-list-items img,
+    .abus-card-containers .abus-col-2 .abus-list-items img,
+    .abus-card-containers .abus-col-3 .abus-list-items img{
+
+        width: 20px; 
+        height: 20px;
+
+
+
 
     }
 
