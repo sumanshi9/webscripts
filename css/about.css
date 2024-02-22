@@ -427,9 +427,24 @@
     .abus-getintouch h3{
         font-size: 35px;
         padding: 35px;
+        padding-bottom: 0;
     }
 
-    
+    .abus-getintouch p{
+        font-size: 15px;
+        padding: 0 50px;
+        margin:0;
+    }
+
+    .abus-contact-us button{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        cursor: pointer;
+
+    }
+
+
 
 }
 
