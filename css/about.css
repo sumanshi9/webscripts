@@ -229,7 +229,7 @@
   box-shadow: 20px 30px 40px -20px hsl(229, 6%, 66%);
   height: 50vh;
   margin: 10px;
-  border-top: 5px solid rgb(20, 110, 245);
+  border-top: 5px solid rgb(0, 0, 0);
   color: white;
 }
 
@@ -239,12 +239,12 @@
 .abus-card-containers .abus-col-3 h2{
     /* color: white; */
     font-family: 'League Spartan', sans-serif;
-    /* font-weight: bolder; */
+    font-weight: bolder;
     font-size: 25px;
     /* text-align: center;  */
     margin-bottom: 0;
     color: black;
-    padding-left: 10px;
+    padding: 20px 50px;
 
 }
 
@@ -253,10 +253,14 @@
 .abus-card-containers .abus-col-3 .abus-list-items{
 
     
-    height: 70%;
+    height: 60%;
     display: flex;
     /* justify-content: center; */
     /* align-items: center; */
+
+    position: relative;
+    width: fit-content; 
+    width: 80%;
 
 
 }
@@ -268,7 +272,7 @@
     text-decoration: none;
     list-style-type: none;
     text-align: center;
-    padding-left: 10px;
+    padding: 20px 50px;
 
 }
 
@@ -282,6 +286,15 @@
     text-align: left;
     margin-top: 15px;
     color: rgb(132, 132, 132);
+}
+
+.abus-card-containers .abus-col-1 .abus-list-items img,
+.abus-card-containers .abus-col-2 .abus-list-items img,
+.abus-card-containers .abus-col-3 .abus-list-items img{
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 @media only screen and (max-width: 768px) {
