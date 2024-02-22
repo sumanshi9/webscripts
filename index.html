@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Home | Webscripts</title>
-        <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+        <link rel="icon" type="image/x-iconprimary-container" href="images/logo.jpg">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -18,44 +18,48 @@
         <script>
             // script.js
 
-window.addEventListener('DOMContentLoaded', () => {
-    const mainContent = document.getElementById('primary-container');
+            window.addEventListener('DOMContentLoaded', () => {
+                const mainContent = document.getElementById('primary-container');
 
-    // Load content based on URL path
-    const loadPage = () => {
-        let path = window.location.pathname;
-        if (path === '/') {
-            path = '/index';
-        }
-        fetch(`${path}.html`)
-            .then(response => response.text())
-            .then(html => {
-                mainContent.innerHTML = html;
-            })
-            .catch(error => {
-                console.error('Error loading page:', error);
-                mainContent.innerHTML = '<p>Error loading page.</p>';
+                // Load content based on URL path
+                const loadPage = () => {
+                    let path = window.location.pathname;
+                    if (path === '/') {
+                        path = '/index';
+                    }
+                    fetch(`${path}.html`)
+                        .then(response => response.text())
+                        .then(html => {
+                            mainContent.innerHTML = html;
+                        })
+                        .catch(error => {
+                            console.error('Error loading page:', error);
+                            mainContent.innerHTML = '<p>Error loading page.</p>';
+                        });
+                };
+
+                // Load initial page
+                loadPage();
+
+                // Update content when navigating with browser back/forward buttons
+                window.addEventListener('popstate', loadPage);
             });
-    };
-
-    // Load initial page
-    loadPage();
-
-    // Update content when navigating with browser back/forward buttons
-    window.addEventListener('popstate', loadPage);
-});
 
         </script>
         
 
     </head>
-    <body>
+    <body onload="myFunction()" style="margin:0;">
         <!-- <video autoplay loop muted class="bg-video">
             <source src="videos/v4.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video> -->
+
+        <div id="loader">
+            <div class="text"></div>
+        </div>
         
-        <div class="primary-container"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
             <div class="topnav" id="Topnav">
                 <div class="flip-container" >
                     <a class="active" href="/"><span>w</span><span>e</span><span>b</span><span>s</span><span>c</span><span>r</span><span>i</span><span>p</span><span>t</span><span>s</span></a>
@@ -159,7 +163,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 </div>
                 
             </div>
-        </div>
+        
 
         
 
@@ -201,9 +205,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         </footer>
+    </div>
 
         <script src="js/index.js"></script>
-        
         
 
     </body>
