@@ -96,6 +96,7 @@ body {
 }
 .topnav {
 overflow: hidden;
+margin-bottom: 10px;
 /* background-color: black; */
 }
 
@@ -824,3 +825,48 @@ font-size: 35px;
   }
 }
 /**************************/
+
+
+/* Privacy Policy */
+
+.main-container{
+  background-color: white;
+  height: 370vh;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.main-container h1{
+  color: black;
+  font-size: 100px;
+  padding: 20px 80px;
+  
+}
+
+.main-container p{
+  padding: 0 200px 0 80px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+@media only screen and (max-width: 768px){
+
+  .main-container{
+    height:300vh;
+  }
+
+  .main-container h1{
+    font-size: 35px;
+    padding: 22px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .main-container p{
+    font-size: 17px;
+    padding: 22px;
+    line-height: 20px;
+    margin-top: 0;
+  }
+
+}
+
+/* End of Privacy Policy */
