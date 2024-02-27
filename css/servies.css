@@ -288,7 +288,8 @@
         margin: 5 25%;
         width: 65%;
         height: 60vh;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
+        opacity: 0;
     }
 
     .pkg-container .pkg-1 .pkg-type,
@@ -314,11 +315,12 @@
         padding: 15px;
     }
 
-    .pkg-container .pkg-1 .pkg-cont p:first-of-type,
-    .pkg-container .pkg-2 .pkg-cont p:first-of-type,
-    .pkg-container .pkg-3 .pkg-cont p:first-of-type  {
+    .pkg-container .pkg-1 .pkg-cont p,
+    .pkg-container .pkg-2 .pkg-cont p,
+    .pkg-container .pkg-3 .pkg-cont p  {
         height: 10vh;
         font-size: 17px;
+        text-align: center;
     }
 
     .pkg-1 li,
@@ -327,8 +329,44 @@
         
         font-size: 15px;
         padding: 0;
+        text-align: left;
 
     }
+
+
+    /* Define your animation */
+@keyframes slideInRightToLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply animation to elements */
+.pkg-container .pkg-1,
+.pkg-container .pkg-2,
+.pkg-container .pkg-3 {
+    animation: slideInRightToLeft 1s forwards;
+}
+
+/* Initially hide the elements */
+.pkg-container .hidden {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.pkg-container .pkg-2 {
+    animation-delay: 1s;
+}
+
+.pkg-container .pkg-3 {
+    animation-delay: 2s;
+}
+
 
 
 
@@ -369,4 +407,22 @@
 .sv-img{
     background-color: rgb(246, 245, 241);
     height: 80vh;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .sv-container-3{
+        padding: 0;
+        
+
+    }
+
+    .sv-container-3 .sv-img img{
+        width:380px;
+        height:300px;
+    }
+
+
+
+
 }
