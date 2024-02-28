@@ -184,30 +184,33 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
       <script>
-// Function to handle the intersection
-function handleIntersection(entries, observer) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.remove('hidden'); // Remove the hidden class to trigger animation
-            observer.unobserve(entry.target); // Stop observing once animation is triggered
-        }
-    });
+let animated = false;
+
+// Function to check if an element is in viewport
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
 }
 
-// Create an intersection observer
-const observer = new IntersectionObserver(handleIntersection, {
-    root: null, // Use the viewport as the root
-    threshold: 0.5 // Trigger when at least 50% of the target is visible
-});
+// Function to handle touch move (for mobile)
+function handleTouchMove() {
+    if (!animated && isInViewport(document.querySelector('.pkg-container'))) {
+        document.querySelectorAll('.pkg-container .hidden').forEach(function(pkg, index) {
+            setTimeout(function() {
+                pkg.classList.remove('hidden');
+            }, index * 500); // Adjust the delay as needed
+        });
+        animated = true;
+        // Remove the touchmove event listener to prevent repeated triggering
+        window.removeEventListener('touchmove', handleTouchMove);
+    }
+}
 
-// Get the target elements
-const packages = document.querySelectorAll('.pkg-container .hidden');
-
-// Observe each target element
-packages.forEach(pkg => {
-    observer.observe(pkg);
-});
-
+// Add touchmove event listener for mobile
+window.addEventListener('touchmove', handleTouchMove);
 
       </script>
       
