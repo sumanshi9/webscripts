@@ -413,7 +413,13 @@
 
     .sv-container-3{
         padding: 0;
+        height: 100vh;
         
+
+    }
+
+    .sv-img{
+        height: 50vh;
 
     }
 
@@ -422,6 +428,16 @@
         height:300px;
     }
 
+    .sv-container-3 p{
+        font-size: 35px;
+        /* margin: 0; */
+        padding: 0;
+    }
+
+
+    .sv-container-3 button{
+        width: 50%;
+    }
 
 
 
