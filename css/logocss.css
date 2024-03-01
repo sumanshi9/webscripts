@@ -60,8 +60,6 @@ body {
 /* Add animation to "page content" */
 .animate-bottom {
   position: relative;
-  font-family: 'League Spartan', sans-serif;
-  /* background-color: rgb(106, 132, 132); */
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
