@@ -6,20 +6,6 @@
 
 
 
-
-.art-container-1{
-    height: 230vh;
-    background-color: white;    
-    padding: 8%;
-    padding-top: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 50px;
-    /* grid-row-gap: 50px; */
-    position: relative;
-       
-}
-
 .art-intro{
     background-color: white;
 }
@@ -42,6 +28,22 @@
     margin-bottom: 5%;
 
 }
+
+
+
+.art-container-1{
+    height: 230vh;
+    background-color: white;    
+    padding: 8%;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    /* grid-row-gap: 50px; */
+    position: relative;
+       
+}
+
 
 .article-category{
     display: flex;
@@ -228,6 +230,19 @@ a{
     .art-intro p{
         padding: 0 30px;
         font-size: 20px;
+    }
+
+    .art-container-1{
+        height: max-content;
+        background-color: white;    
+        padding: 8%;
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 50%;
+        /* grid-row-gap: 50px; */
+        position: relative;
+           
     }
 
 }
