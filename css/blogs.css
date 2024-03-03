@@ -234,15 +234,21 @@ a{
 
     .art-container-1{
         height: max-content;
-        background-color: white;    
-        padding: 8%;
-        padding-top: 0;
-        display: grid;
         grid-template-columns: 1fr;
-        /* grid-column-gap: 50%; */
         grid-row-gap: 50px;
-        position: relative;
-           
+    }
+
+    .art-container-1 .art-card-1-cont h2{
+        font-size: 20px;
+        margin-top: 0;
+        height: 10vh;
+
+    }
+
+    .art-container-1 .art-card-1-cont p{
+        font-size: 15px;
+        /* margin-top: 0; */
+
     }
 
 }
