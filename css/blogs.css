@@ -223,8 +223,11 @@ a{
     .art-intro h1{
         padding: 10px;
         font-size: 35px;
-        
-    
+    }
+
+    .art-intro p{
+        padding: 0 30px;
+        font-size: 20px;
     }
 
 }
