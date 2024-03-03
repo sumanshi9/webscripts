@@ -43,18 +43,19 @@
             <div class="flip-container-navbar">
               <a href="/work" style="font-size: 35px;"><span>W</span><span>o</span><span>r</span><span>k</span></a>
             </div>
+            <div class="flip-container">
+              <a href="/blogs" style="font-size: 35px;"><span>N</span><span>e</span><span>w</span><span>s</span></a>
+            </div>
             <div class="flip-container-navbar">
               <a href="/contact" style="font-size: 35px;"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a>
             </div>
-            <div class="flip-container">
-              <a href="/blogs" style="font-size: 35px;"><span>B</span><span>l</span><span>o</span><span>g</span><span>s</span></a>
-            </div>   
+               
           </div>
         </div>
        
-
+        
         <div class="art-intro">
-          <h1>Webscripts Blog</h1>
+          <h1>Webscripts News</h1>
           <p>Exploring the Digital Realm: Insights, Trends, and Discoveries</p>
         </div>
 
@@ -64,6 +65,10 @@
             <a href="blog/Why-Every-Business-Big-or-Small-Needs-a-Website.html">
             <div class="art-card-1-img"></div>
             <div class="art-card-1-cont">
+              <div class="article-category">
+                <p class="article-category-type web-dev"><a href=""><b>WEB DEVELOPMENT</b></a> &nbsp;&nbsp;</p>
+                <!-- <p class="article-category-date"> - OCTOBER 9, 2023</p> -->
+              </div>
               <h2>Why Every Business, Big or Small, Needs a Website?</h2>
               <p>In today's digitally-driven world, having a robust online presence is not just a luxury; it's a necessity for businesses of all sizes.
               </p>
@@ -78,8 +83,12 @@
             <a href="blog/SEO-Trends-to-Watch-in-2024-Staying-Ahead-of-the-Curve.html">
             <div class="art-card-2-img"></div>
             <div class="art-card-1-cont">
+              <div class="article-category">
+                <p class="article-category-type seo">SEO &nbsp;&nbsp;</p>
+                <!-- <p class="article-category-date"> - OCTOBER 9, 2023</p> -->
+              </div>
               <h2>SEO Trends to Watch in 2024: Staying Ahead of the Curve</h2>
-              <p>In the dynamic landscape of digital marketing, staying abreast of the latest SEO trends is crucial for maintaining a competitive edge and maximizing online visibility. 
+              <p>In the dynamic landscape of digital marketing, staying abreast of the latest SEO trends is crucial for maintaining a competitive edge and... 
               </p>
               <br>
               <div class="arrow">
@@ -93,7 +102,7 @@
             <div class="art-card-3-img"></div>
             <div class="art-card-1-cont">
               <h2>Maximizing ROI on a Budget: Cost-Effective Website Marketing</h2>
-              <p>In today's digital age, having a well-designed website is crucial for businesses to establish an online presence and reach their target audience effectively.
+              <p>In today's digital age, having a well-designed website is crucial for businesses to establish an online presence and reach their target...
 
               </p>
               <br>
@@ -176,6 +185,21 @@
           </a>
           </div>
 
+          <div class="art-card-9">
+            <a href="blog/Google-Cracks-Down-on-Authorship-Markups-What-You-Need-to-Know.html">
+            <div class="art-card-9-img"></div>
+            <div class="art-card-1-cont">
+              <h2>Google Cracks Down on Authorship Markups: What You Need to Know</h2>
+              <p>In the ever-evolving landscape of SEO, staying on top of Google's algorithm updates is paramount for web developers and marketers alike. Recently, Google has intensified its crackdown on... 
+              </p>
+              <br>
+              <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+              </div>
+            </div>
+          </a>
+          </div>
+
 
 
           
@@ -224,61 +248,8 @@
         </footer>
 
         <script>
-          // Function to create new divs with unique class names and content
-          function createNewDiv(imageUrl, content) {
-              const container = document.getElementById('container');
-              const newDiv = document.createElement('div');
-              const nextDivNumber = container.querySelectorAll('.art-card').length + 1;
-              const className = 'art-card-' + nextDivNumber;
+         
 
-              newDiv.classList.add('art-card');
-              newDiv.classList.add(className);
-
-              // Add image
-              const imgDiv = document.createElement('div');
-              imgDiv.classList.add(className + '-img');
-              imgDiv.style.backgroundImage = `url("${imageUrl}")`;
-              newDiv.appendChild(imgDiv);
-
-              // Add content
-              const contentDiv = document.createElement('div');
-              contentDiv.classList.add(className + '-cont');
-              const heading = document.createElement('h2');
-              heading.textContent = content.title;
-              const para = document.createElement('p');
-              para.textContent = content.description;
-              const arrowDiv = document.createElement('div');
-              arrowDiv.classList.add('arrow');
-              const arrowIcon = document.createElement('i');
-              arrowIcon.classList.add('fas', 'fa-arrow-right', 'card-icon');
-              arrowDiv.appendChild(arrowIcon);
-
-              contentDiv.appendChild(heading);
-              contentDiv.appendChild(para);
-              contentDiv.appendChild(document.createElement('br'));
-              contentDiv.appendChild(arrowDiv);
-
-              newDiv.appendChild(contentDiv);
-
-              container.appendChild(newDiv);
-          }
-
-          // Function to add new divs with different content and images
-          function addNewDivs() {
-              const contentAndImages = [
-                  { imageUrl: "../images/art-7.jpg", content: { title: "Title for Div 7", description: "Description for Div 7" } },
-                  { imageUrl: "../images/art-8.jpg", content: { title: "Title for Div 8", description: "Description for Div 8" } },
-                  { imageUrl: "../images/art-9.jpg", content: { title: "Title for Div 9", description: "Description for Div 9" } },
-                  // Add more entries as needed
-              ];
-
-              contentAndImages.forEach(item => {
-                  createNewDiv(item.imageUrl, item.content);
-              });
-          }
-
-          // Call the function to add new divs
-          addNewDivs();
 
         </script>
 
