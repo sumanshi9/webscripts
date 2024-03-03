@@ -213,6 +213,22 @@ a{
     color: #fff; 
 }
 
+@media only screen and (max-width: 768px) {
+
+
+    .art-intro{
+        background-color: white;
+    }
+    
+    .art-intro h1{
+        padding: 10px;
+        font-size: 35px;
+        
+    
+    }
+
+}
+
 
 
 
