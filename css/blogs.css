@@ -129,6 +129,17 @@
   .art-container-1 .art-card-13{animation-delay: 2.4s;}
   .art-container-1 .art-card-14{animation-delay: 2.6s;}
   .art-container-1 .art-card-15{animation-delay: 2.8s;}
+  .art-container-1 .art-card-16{animation-delay: 2.8s;}
+  .art-container-1 .art-card-17{animation-delay: 2.8s;}
+  .art-container-1 .art-card-18{animation-delay: 2.8s;}
+  .art-container-1 .art-card-19{animation-delay: 2.8s;}
+  .art-container-1 .art-card-20{animation-delay: 2.8s;}
+  .art-container-1 .art-card-21{animation-delay: 2.8s;}
+  .art-container-1 .art-card-22{animation-delay: 2.8s;}
+  .art-container-1 .art-card-23{animation-delay: 2.8s;}
+  .art-container-1 .art-card-24{animation-delay: 2.8s;}
+  .art-container-1 .art-card-25{animation-delay: 2.8s;}
+  
   
 
 .art-card-1:hover,.art-card-2:hover,.art-card-3:hover,.art-card-4:hover,.art-card-5:hover,.art-card-6:hover,.art-card-7:hover,.art-card-8:hover,.art-card-9:hover,.art-card-10:hover,.art-card-11:hover,.art-card-12:hover,.art-card-13:hover,.art-card-14:hover,.art-card-15:hover{
@@ -199,6 +210,16 @@ a{
 .art-card-13-img{background-image: url("../images/news-13.jpg"); background-color: white; background-position: -20px -10px;}
 .art-card-14-img{background-image: url("../images/news-14.jpg");}
 .art-card-15-img{background-image: url("../images/news-15.jpg");}
+.art-card-16-img{background-image: url("../images/news-16.jpg");}
+.art-card-17-img{background-image: url("../images/news-17.jpg");}
+.art-card-18-img{background-image: url("../images/news-18.jpg");}
+.art-card-19-img{background-image: url("../images/news-19.jpg");}
+.art-card-20-img{background-image: url("../images/news-20.jpg");}
+.art-card-21-img{background-image: url("../images/news-21.jpg");}
+.art-card-22-img{background-image: url("../images/news-22.jpg");}
+.art-card-23-img{background-image: url("../images/news-23.jpg");}
+.art-card-24-img{background-image: url("../images/news-24.jpg");}
+.art-card-25-img{background-image: url("../images/news-25.jpg");}
 
 .arrow {
     display: flex;
