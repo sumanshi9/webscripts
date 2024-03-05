@@ -87,7 +87,18 @@
 .art-card-12,
 .art-card-13,
 .art-card-14,
-.art-card-15{
+.art-card-15,
+.art-card-16,
+.art-card-17,
+.art-card-18,
+.art-card-19,
+.art-card-20,
+.art-card-21,
+.art-card-22,
+.art-card-23,
+.art-card-24,
+.art-card-25{
+
 
     height: 67vh;
     background-color: rgb(255, 255, 255);
@@ -142,11 +153,33 @@
   
   
 
-.art-card-1:hover,.art-card-2:hover,.art-card-3:hover,.art-card-4:hover,.art-card-5:hover,.art-card-6:hover,.art-card-7:hover,.art-card-8:hover,.art-card-9:hover,.art-card-10:hover,.art-card-11:hover,.art-card-12:hover,.art-card-13:hover,.art-card-14:hover,.art-card-15:hover{
+.art-card-1:hover,.art-card-2:hover,.art-card-3:hover,.art-card-4:hover,.art-card-5:hover,.art-card-6:hover,.art-card-7:hover,.art-card-8:hover,.art-card-9:hover,.art-card-10:hover,.art-card-11:hover,.art-card-12:hover,.art-card-13:hover,.art-card-14:hover,
+.art-card-15:hover,
+.art-card-16:hover,
+.art-card-17:hover,
+.art-card-18:hover,
+.art-card-19:hover,
+.art-card-20:hover,
+.art-card-21:hover,
+.art-card-22:hover,
+.art-card-23:hover,
+.art-card-24:hover,
+.art-card-25:hover{
     transform: scale(1.05);
 }
 
-.art-card-1-img,.art-card-2-img,.art-card-3-img,.art-card-4-img,.art-card-5-img,.art-card-6-img,.art-card-7-img,.art-card-8-img,.art-card-9-img,.art-card-10-img,.art-card-11-img,.art-card-12-img,.art-card-13-img,.art-card-14-img,.art-card-15-img{    
+.art-card-1-img,.art-card-2-img,.art-card-3-img,.art-card-4-img,.art-card-5-img,.art-card-6-img,.art-card-7-img,.art-card-8-img,.art-card-9-img,.art-card-10-img,.art-card-11-img,.art-card-12-img,.art-card-13-img,.art-card-14-img,
+.art-card-15-img,
+.art-card-16-img,
+.art-card-17-img,
+.art-card-18-img,
+.art-card-19-img,
+.art-card-20-img,
+.art-card-21-img,
+.art-card-22-img,
+.art-card-23-img,
+.art-card-24-img,
+.art-card-25-img{    
     background-size: cover;
     background-position: center;
     background-color: rgb(162, 162, 162);
@@ -199,7 +232,7 @@ a{
 .art-card-2-img{background-image: url("../images/news-2.jpg");}
 .art-card-3-img{background-image: url("../images/art-3.jpg");background-position: center -10px;}
 .art-card-4-img{background-image: url("../images/art-4.jpg");}
-.art-card-5-img{background-image: url("../images/art-5.jpg");}
+.art-card-5-img{background-image: url("../images/news-5.jpg"); background-size: 75%; background-position: center -52px;}
 .art-card-6-img{background-image: url("../images/art-6.jpg");}
 .art-card-7-img{background-image: url("../images/news-7.jpg");}
 .art-card-8-img{background-image: url("../images/news-8.jpg");}
