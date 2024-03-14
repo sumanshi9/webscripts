@@ -55,6 +55,17 @@ body {
     text-align: center;
   }
 
+  #loader{
+    height: 90vh;
+    overflow-y:hidden ;
+    overflow-x: hidden;
+  }
+
+  .text{
+    height: 50px;
+    
+  }
+
 }
 
 /* Add animation to "page content" */
