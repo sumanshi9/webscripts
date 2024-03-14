@@ -284,27 +284,34 @@ padding-top: 10px;
     
     .menu-icon {
       display: block;
+      z-index: 1;
     }
     
     .topnav-right {
       display: none;
       position: absolute;
-      top: 100%;
+      top: 0.1%;
       left: 0;
-      background-color: #333;
+      background-color: #000000;
       width: 100%;
+      height: max-content;
+      float: right;
+      margin-right: 0;
     }
     
     .topnav-right.active {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      
     }
     
     .topnav-right a {
-      display: block;
+      display: block;      
       padding: 10px;
       text-align: center;
       color: #fff;
       text-decoration: none;
+      font-size: 20px;
     }
 
 
