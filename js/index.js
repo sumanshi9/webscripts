@@ -115,19 +115,19 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-document.getElementById('animate-bottom').addEventListener('wheel', function(event) {
-if (event.deltaY > 0) {
-    event.target.scrollBy({
-    top: window.innerHeight,
-    left: 0,
-    behavior: 'smooth'});
-} else {
-    event.target.scrollBy({
-    top: -window.innerHeight,
-    left: 0,
-    behavior: 'smooth'});
-    }
-});
+// document.getElementById('animate-bottom').addEventListener('wheel', function(event) {
+// if (event.deltaY > 0) {
+//     event.target.scrollBy({
+//     top: window.innerHeight,
+//     left: 0,
+//     behavior: 'smooth'});
+// } else {
+//     event.target.scrollBy({
+//     top: -window.innerHeight,
+//     left: 0,
+//     behavior: 'smooth'});
+//     }
+// });
 
 
 function toggleMenu() {
