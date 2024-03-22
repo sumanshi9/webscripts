@@ -39,6 +39,14 @@ let sentences = document.querySelectorAll('.int2');
           var cell6 = document.getElementById("cell6");
           var cell7 = document.getElementById("cell7");
           var cell8 = document.getElementById("cell8");
+
+          // var editImage = document.createElement('img');
+          // editImage.src = "images/art-7.jpg";
+          // editImage.alt = "Edit";
+          
+          
+
+          
           
 
 
@@ -49,6 +57,7 @@ let sentences = document.querySelectorAll('.int2');
           row1.addEventListener("mouseover", function() {
             if (!linkInserted && !linkOpened) {
               cell1.textContent = "(+)";
+
             }
           });
 
@@ -62,7 +71,7 @@ let sentences = document.querySelectorAll('.int2');
             cell1.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://smokesociety.ca/"; // Change this to your desired URL
+                link.href = "https://smokesociety.ca/"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell1.textContent = ''; // Clear existing content
@@ -97,7 +106,7 @@ let sentences = document.querySelectorAll('.int2');
             cell2.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://glose.com/what-is-glose"; // Change this to your desired URL
+                link.href = "https://glose.com/what-is-glose"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell2.textContent = ''; // Clear existing content
@@ -114,6 +123,7 @@ let sentences = document.querySelectorAll('.int2');
           row3.addEventListener("mouseover", function() {
             if (!linkInserted && !linkOpened) {
               cell3.textContent = "(+)";
+              // cell3.appendChild(editImage);
             }
           });
 
@@ -127,7 +137,7 @@ let sentences = document.querySelectorAll('.int2');
           cell3.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://www.eastindiaco.com/shop-merch/"; // Change this to your desired URL
+                link.href = "https://www.eastindiaco.com/shop-merch/"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell3.textContent = ''; // Clear existing content
@@ -155,7 +165,7 @@ let sentences = document.querySelectorAll('.int2');
           cell4.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://www.lerock.net//"; // Change this to your desired URL
+                link.href = "https://www.lerock.net//"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell4.textContent = ''; // Clear existing content
@@ -186,7 +196,7 @@ let sentences = document.querySelectorAll('.int2');
           cell5.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://tscglobaltrading.com/"; // Change this to your desired URL
+                link.href = "https://tscglobaltrading.com/"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell5.textContent = ''; // Clear existing content
@@ -215,7 +225,7 @@ let sentences = document.querySelectorAll('.int2');
           cell6.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://gbbofficial.com/"; // Change this to your desired URL
+                link.href = "https://gbbofficial.com/"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell6.textContent = ''; // Clear existing content
@@ -243,7 +253,7 @@ let sentences = document.querySelectorAll('.int2');
           cell7.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://shreeumiyaenterprise.in/"; // Change this to your desired URL
+                link.href = "https://shreeumiyaenterprise.in/"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell7.textContent = ''; // Clear existing content
@@ -271,7 +281,7 @@ let sentences = document.querySelectorAll('.int2');
           cell8.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://next.junni.co.jp/"; // Change this to your desired URL
+                link.href = "https://next.junni.co.jp/"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell8.textContent = ''; // Clear existing content
