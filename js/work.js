@@ -119,7 +119,7 @@ let sentences = document.querySelectorAll('.int2');
 
           row3.addEventListener("mouseout", function() {
             if (!linkInserted || linkOpened) {
-              cell3.textContent = "Japan";
+              cell3.textContent = "Canada";
             }
           });
 
@@ -127,7 +127,7 @@ let sentences = document.querySelectorAll('.int2');
           cell3.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://www.ga-tech.co.jp/"; // Change this to your desired URL
+                link.href = "https://www.eastindiaco.com/shop-merch/"; // Change this to your desired URL
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell3.textContent = ''; // Clear existing content
