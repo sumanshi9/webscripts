@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="css/rule.css"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
 
     <url>
         <loc>https://webscripts.ca</loc>
@@ -133,14 +133,5 @@
     <url>
         <loc>https://webscripts.ca/news/Why-Every-Business-Big-or-Small-Needs-a-Website</loc>
         <lastmod>2024-03-05</lastmod>
-    </url>
-    
-    
-    
-    
-    
-   
-    
-    
-    
+    </url>     
 </urlset>
