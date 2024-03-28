@@ -98,7 +98,7 @@ let sentences = document.querySelectorAll('.int2');
 
           row2.addEventListener("mouseout", function() {
             if (!linkInserted || linkOpened) {
-              cell2.textContent = "France";
+              cell2.textContent = "Japan";
             }
           });
 
@@ -106,7 +106,7 @@ let sentences = document.querySelectorAll('.int2');
             cell2.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://glose.com/what-is-glose"; 
+                link.href = "https://ibj-english.vercel.app/"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell2.textContent = ''; // Clear existing content
@@ -225,7 +225,7 @@ let sentences = document.querySelectorAll('.int2');
           cell6.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://gbbofficial.com/"; 
+                link.href = "https://www.bridalnet.co.jp/"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell6.textContent = ''; // Clear existing content
@@ -281,7 +281,7 @@ let sentences = document.querySelectorAll('.int2');
           cell8.addEventListener("click", function(event) {
               if (!linkInserted) {
                 var link = document.createElement("a");
-                link.href = "https://next.junni.co.jp/"; 
+                link.href = "https://rush01.com/"; 
                 link.textContent = "(+)";
                 link.target = "_blank"; // Opens the link in a new tab/window
                 cell8.textContent = ''; // Clear existing content
